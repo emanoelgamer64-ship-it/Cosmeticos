@@ -1,0 +1,87 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fef1f5;
+    color: #333;
+}
+
+header {
+    background-color: #f06292;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Produtos */
+main {
+    padding: 30px 20px;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.produto {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+}
+
+.produto h2 {
+    margin-bottom: 10px;
+    color: #c2185b;
+}
+
+.produto img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.produto button {
+    background-color: #f06292;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.produto button:hover {
+    background-color: #ec407a;
+}
